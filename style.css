@@ -431,7 +431,6 @@ h1 {
 
 #link_site_projeto_1 {
     opacity: 0;
-
     background: #393939;
     color: #e1e1e1;
     position: absolute;
@@ -545,7 +544,7 @@ h1 {
         position: absolute;
         top: 8vh;
         right: 0;
-        width: 70vw;
+        width: 50vw;
         height: 92vh;
         background: #393939;
         flex-direction: column;
@@ -593,12 +592,14 @@ h1 {
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 80vh;
     }
 
     .home_page_grid_template_responsive {
         display: flex;
         align-items: center;
         margin: 0 auto;
+        max-width: 400px;
 
     }
     .foto_perfil_grid_left {
@@ -608,14 +609,319 @@ h1 {
 
     .nome_script_grid_rigth {
         display: flex;
-        max-width: 900px;
+        max-width: 400px;
         position: absolute;
         margin: 0 auto;
         align-items: center;
-        opacity: 0.4;
+        opacity: 0.2;
 
     }
 
+    .div_titulo_esc_animado {
+        display: flex;
+        position: absolute;
+        position: absolute;
+        align-items: center;
+        margin: 0 0 0 33em;
+    }
+
+    .section_sobre_flex {
+        height: 70vh;
+    }
+    .div_sobre_grid_template_columns {
+        margin: 300px 0 0 0;
+    }
+    .section_exp_flex_template {
+        height: 80vh;
+    }
+    .exp_escolaridade_grid_template_2_columns {
+        margin: 300px 0 0 0;
+    }
+    .section_projetos_flex_container {
+        height: 90vh;
+    }
+}
+
+@media (max-width:800px) {
+
+    .div_flex_1100_template {
+        max-width: 450px;
+    }
+    .html_img_inferior, .css_img_inferior, .js_img_inferior {
+        width: 80px;
+        z-index: 2;
+    }
+    .html_img_superior, .css_img_superior, .js_img_superior {
+        width: 80px;
+        position: absolute;
+        z-index: 90;
+    }
+    .text_exp_animado {
+        position: absolute;
+        margin: 0 auto 6em auto;
+    }
+    .div_titulo_exp {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: start;
+        margin: 0 0 0 7.5em;
+    }
+    .div_titulo_esc_animado {
+        display: flex;
+        position: absolute;
+        position: absolute;
+        align-items: center;
+        margin: 0 0 0 42em;
+    }
+    
+    .text_div_grid_html, .text_div_grid_css, .text_div_grid_js {
+        position: absolute;
+        margin: 7em auto 0 auto;
+        z-index: 0;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 750;
+    }
+    
+    .div_escolaridade_span_2 {
+        display: flexbox;
+        grid-column: span 1;
+        justify-content: center;
+        align-items: center;
+        margin: 2em 0 0 1em;
+        
+    }
+    .img_logo_uniasselvi_svg_exp , .img_logo_alura_svg_exp {
+        position: absolute;
+        width: 80px;
+        padding-top: 1em;
+        
+    }
+    .uniasselvi_text_flex_column, .alura_text_flex_column {
+        font-size: 14px;
+        color: #000000;
+        margin: 0 0 2.5em 7em;
+        padding-top: 3em ;
+        font-weight: 700;
+    }
+
+    .div_titulo_esc_animado {
+        display: flex;
+        position: absolute;
+        position: absolute;
+        align-items: center;
+        margin: 0 0 0 28em;
+    }
+}
+
+@media (max-width:450px) {
+
+    .img__header {
+        width: 250px;
+    }
+
+    .mobile_menu div {
+        width: 24px;
+        height: 2px;
+        background: #ffffff;
+        margin: 6px;   
+    }
+
+    .section_home_grid_columns {
+        height: 120vh;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .texto_animado_home {
+        width: 315px;
+        font-size: 28px;
+    }
+
+    .home_page_grid_template_responsive {
+        display: flex;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 70px auto;
+
+    }
+
+    .foto_perfil_home_grid_template {
+        width: 100%;
+    }
+    .flex_botoes_home_contato {
+        width: 150px;
+    }
+
+    .foto_perfil_grid_left {
+        display: block;
+        position: relative;
+        width:330px;
+    }
+
+    .nome_script_grid_rigth {
+        display: flex;
+        justify-content: center;
+        opacity: 0.2;
+    }
+
+    .home_botao_linkedin_left {
+        text-decoration: none;
+        font-size: 20px;
+        background-color: #393939;
+        border-radius: 10px;
+        padding: 15px 35px;
+        margin: 30px 0 0 0px;
+        color: #ffffff;
+        border-width: 3px;
+        border-style:solid;
+        border-color: #3486A3;
+        transition: .2s;
+    }
+
+    .home_botao_github_rigth {
+        text-decoration: none;
+        font-size: 20px;
+        background-color: #393939;
+        border-radius: 10px;
+        padding: 15px 45px;
+        margin: 30px 0 0 30px;
+        color: #ffffff;
+        border-width: 3px;
+        border-style:solid;
+        border-color: #3486A3;
+        transition: .2s;
+    }
+
+    .section_sobre_flex {
+        height: 100vh;
+    }
+
+    .texto_animado_sobre {
+        font-size: 22px ;
+    }
+
+    .text_sobre_article_center {
+        color: #e1e1e1;
+        font-size: 14px;
+    }
+    .par_2_text {
+        margin: 1em 0 0 0;
+    }
+
+    .cartao_sobre_tempplate_2 {
+        width: 100%;
+        margin: 0 0 520px 0;
+    }
+
+    .section_exp_flex_template {
+        height: 100vh;
+    }
+    .exp_escolaridade_grid_template_2_columns {
+        margin: 0 0 10% 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .html_img_inferior, .css_img_inferior, .js_img_inferior {
+        width: 100px;
+        z-index: 2;
+    }
+    .html_img_superior, .css_img_superior, .js_img_superior {
+        width: 100px;
+        position: absolute;
+        z-index: 90;
+    }
+    .text_exp_animado {
+        position: absolute;
+        margin: 0 auto 6em auto;
+    }
+    .div_titulo_exp {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: start;
+        margin: 3em 0 0 8.5em;
+    }
+    .div_titulo_esc_animado {
+        display: flex;
+        position: absolute;
+        position: absolute;
+        align-items: center;
+        margin: 18em 0 0 7.8em;
+    }
+    
+    .text_div_grid_html, .text_div_grid_css, .text_div_grid_js {
+        position: absolute;
+        margin: 8em auto 0 auto;
+        z-index: 0;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 750;
+    }
+    
+    .div_escolaridade_span_2 {
+        display: flexbox;
+        grid-column: span 1;
+        justify-content: center;
+        align-items: center;
+        margin: 2em 0 0 1em;
+        
+    }
+    .img_logo_uniasselvi_svg_exp , .img_logo_alura_svg_exp {
+        position: absolute;
+        width: 80px;
+        padding-top: 1em;
+        
+    }
+    .uniasselvi_text_flex_column, .alura_text_flex_column {
+        font-size: 12px;
+        color: #000000;
+        margin: 0 0 2.5em 7em;
+        padding-top: 4em ;
+    }
+
+
+    .section_projetos_flex_container {
+        height: 160vh;
+    }
+
+    .titulo_projetos_animated {
+        margin: 0 0 260% 0;
+    }
+
+    .div_projetos_grid_template {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin: 40% 0 0 0;
+    }
+
+    #link_repositorio_projeto_1, #link_site_projeto_1 {
+        opacity: 1;
+    }
+
+    .section_contato_display_flex {
+        display: flex;
+        width: 100%;
+        height: 30vh;
+    
+    }
+    
+    .div_1100_flex_contato {
+        display: flex;
+        max-width: 350px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    
+    .icons_contato_guthub, .icons_contato_instagram, .icons_contato_linckedin, .icons_contato_whatsapp {
+        width: 45px;
+        height: 45px;
+        transition: .2s;
+    
+    }
 
 
 }
