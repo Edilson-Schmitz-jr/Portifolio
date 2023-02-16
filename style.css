@@ -65,7 +65,10 @@ body {
     height: 3px;
     background: #ffffff;
     margin: 8px;
+}
 
+.img_curriculo_download {
+    width: 20px;
 }
 
 /* Home template ---------------------------------------------------------*/
@@ -154,7 +157,7 @@ h1 {
 .home_botao_linkedin_left:hover {
     background-color: #3486A3;
     border-color: #393939;
-    color: #000000;
+    color: #ffffff;
     text-shadow: 0px 0px 1.5px #ffffff;
 }
 
@@ -175,7 +178,7 @@ h1 {
 .home_botao_github_rigth:hover {
     background-color: #3486A3;
     border-color: #393939;
-    color: #000000;
+    color: #ffffff;
     text-shadow: 0px 0px 1.5px #ffffff;
 }
 [data-anime] {
@@ -264,6 +267,27 @@ h1 {
     border-width: 3px;
     border-style:solid;
     border-color: #3486A3;
+}
+.download_curriculo_buttom {
+    display: flex;
+    position: absolute;
+    text-decoration: none;
+    margin: 0 0 0 52%;
+    font-size: 20px;
+    color: #ffffff;
+    transition: .7s;
+    background: #393939;
+    padding: 12px 12px;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style:solid;
+    border-color: #3486A3;
+}
+.download_curriculo_buttom:hover {
+    background-color: #3486A3;
+    border-color: #ffffff;
+    color: #ffffff;
+    text-shadow: 0px 0px 1.5px #ffffff;
 }
 
 .text_sobre_article_center {
@@ -648,6 +672,22 @@ h1 {
     .section_sobre_flex {
         height: 70vh;
     }
+    .download_curriculo_buttom {
+        align-items: center;
+        display: flex;
+        position: absolute;
+        text-decoration: none;
+        margin: 0 0 0 68%;
+        font-size: 16px;
+        color: #ffffff;
+        transition: .7s;
+        background: #393939;
+        padding: 12px 12px;
+        border-radius: 10px;
+        border-width: 3px;
+        border-style:solid;
+        border-color: #3486A3;
+    }
     .div_sobre_grid_template_columns {
         margin: 300px 0 0 0;
     }
@@ -665,6 +705,22 @@ h1 {
 @media (max-width:800px) {
     body {
         overflow-x: hidden;
+    }
+    .download_curriculo_buttom {
+        align-items: center;
+        display: flex;
+        position: absolute;
+        text-decoration: none;
+        margin: 0 0 0 62%;
+        font-size: 16px;
+        color: #ffffff;
+        transition: .7s;
+        background: #393939;
+        padding: 12px 12px;
+        border-radius: 10px;
+        border-width: 3px;
+        border-style:solid;
+        border-color: #3486A3;
     }
 
     .div_flex_1100_template {
@@ -841,6 +897,27 @@ h1 {
 
     .section_sobre_flex {
         height: 100vh;
+    }
+
+    .download_curriculo_buttom {
+        align-items: center;
+        display: flex;
+        position: absolute;
+        text-decoration: none;
+        margin: -.3em 0 0 42%;
+        font-size: 12px;
+        color: #ffffff;
+        transition: .7s;
+        background: #393939;
+        padding: 5px 5px;
+        border-radius: 10px;
+        border-width: 3px;
+        border-style:solid;
+        border-color: #3486A3;
+    }
+
+    .img_curriculo_download {
+        width: 15px;
     }
 
     .texto_animado_sobre {
