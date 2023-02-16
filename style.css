@@ -823,6 +823,7 @@ h1 {
 
     .section_exp_flex_template {
         height: 100vh;
+        overflow-x: hidden;
     }
     .exp_escolaridade_grid_template_2_columns {
         margin: 0 0 10% 0;
