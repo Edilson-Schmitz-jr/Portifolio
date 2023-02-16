@@ -183,38 +183,38 @@ h1 {
     transition: .7s;
 }
 [data-anime="left"] {
-    transform: translate3d(-100px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
     transition: .7s;
 }
 [data-anime="rigth"] {
-    transform: translate3d(100px, 0, 0);
+    transform: translate3d(25px, 0, 0);
     transition: .7s;
 }
 [data-anime="opacity"] {
     transition: .5s;
 }
 [data-anime="opacity-left"] {
-    transform: translate3d(-100px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
     transition: 1.2s;
 }
 [data-anime="opacity-left-html"] {
-    transform: translate3d(-100px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
     transition: 1.8s;
 }
 [data-anime="opacity-left-css"] {
-    transform: translate3d(-100px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
     transition: 1.4s;
 }
 [data-anime="opacity-left-js"] {
-    transform: translate3d(-100px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
     transition: 1s;
 }
 [data-anime="opacity-rigth"] {
-    transform: translate3d(100px, 0, 0);
+    transform: translate3d(25px, 0, 0);
     transition: 1.2s;
 }
 [data-anime="opacity-rigth-2"] {
-    transform: translate3d(100px, 0, 0);
+    transform: translate3d(25px, 0, 0);
     transition: 1.6s;
 }
 [data-anime="top"] {
