@@ -291,6 +291,7 @@ h1 {
 .div_titulo_esc_animado {
     display: flex;
     position: absolute;
+    position: absolute;
     align-items: center;
     margin: 0 0 0 41em;
 }
