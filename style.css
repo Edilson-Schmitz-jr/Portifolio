@@ -643,6 +643,9 @@ h1 {
 }
 
 @media (max-width:800px) {
+    body {
+        overflow-x: hidden;
+    }
 
     .div_flex_1100_template {
         max-width: 450px;
@@ -716,6 +719,9 @@ h1 {
 }
 
 @media (max-width:450px) {
+    body {
+        overflow-x: hidden;
+    }
 
     .img__header {
         width: 250px;
@@ -740,7 +746,6 @@ h1 {
 
     .home_page_grid_template_responsive {
         display: flex;
-        max-width: 100%;
         align-items: center;
         justify-content: center;
         margin: 0 auto 70px auto;
