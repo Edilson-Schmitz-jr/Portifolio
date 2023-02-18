@@ -269,10 +269,9 @@ h1 {
     border-color: #3486A3;
 }
 .download_curriculo_buttom {
-    display: flex;
     position: absolute;
+    left: 65%;
     text-decoration: none;
-    margin: 0 0 0 52%;
     font-size: 20px;
     color: #ffffff;
     transition: .7s;
