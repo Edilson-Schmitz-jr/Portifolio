@@ -589,7 +589,7 @@ h1 {
         top: 8vh;
         right: 0;
         width: 50vw;
-        height: 92vh;
+        height: 100vh;
         background: #393939;
         flex-direction: column;
         align-items: center;
@@ -826,7 +826,6 @@ h1 {
         height: 90vh;
     }
 }
-
 @media (max-width:800px) {
     body {
         overflow-x: hidden;
@@ -835,12 +834,10 @@ h1 {
         height: 80vh;
     }
     .download_curriculo_buttom {
-        align-items: center;
-        display: flex;
         position: absolute;
+        left: 65%;
         text-decoration: none;
-        margin: 0 0 0 62%;
-        font-size: 16px;
+        font-size: 20px;
         color: #ffffff;
         transition: .7s;
         background: #393939;
@@ -849,6 +846,12 @@ h1 {
         border-width: 3px;
         border-style:solid;
         border-color: #3486A3;
+    }
+    .download_curriculo_buttom:hover {
+        background-color: #3486A3;
+        border-color: #ffffff;
+        color: #ffffff;
+        text-shadow: 0px 0px 1.5px #ffffff;
     }
 
     .div_flex_1100_template {
@@ -941,7 +944,6 @@ h1 {
         margin: 0 0 0 28em;
     }
 }
-
 @media (max-width:450px) {
     body {
         overflow-x: hidden;
@@ -1028,20 +1030,19 @@ h1 {
     }
 
     .download_curriculo_buttom {
-        align-items: center;
-        display: flex;
         position: absolute;
+        left: 4%;
         text-decoration: none;
-        margin: -.3em 0 0 42%;
-        font-size: 12px;
+        font-size:8px;
         color: #ffffff;
         transition: .7s;
         background: #393939;
-        padding: 5px 5px;
+        padding: 12px 12px;
         border-radius: 10px;
         border-width: 3px;
         border-style:solid;
         border-color: #3486A3;
+        scale: .8;
     }
 
     .img_curriculo_download {
@@ -1054,7 +1055,7 @@ h1 {
 
     .text_sobre_article_center {
         color: #e1e1e1;
-        font-size: 14px;
+        font-size: 12px;
     }
     .par_2_text {
         margin: 1em 0 0 0;
@@ -1063,6 +1064,7 @@ h1 {
     .cartao_sobre_tempplate_2 {
         width: 100%;
         margin: 0 0 300px 0;
+        scale: .96;
     }
 
     .section_exp_flex_template {
@@ -1314,7 +1316,6 @@ h1 {
 
     .download_curriculo_buttom {
         position: absolute;
-        left: 20%;
         text-decoration: none;
         font-size: 8px;
         color: #ffffff;
