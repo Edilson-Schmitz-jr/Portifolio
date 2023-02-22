@@ -577,6 +577,133 @@ h1 {
 
 /* resposividade ------------------------------------------------------------- */
 
+@media (max-width:1280px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav_list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #393939;
+        flex-direction: column;
+        align-items: center;
+
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        z-index: 80;
+    }
+    .lista__menu__detalhe {
+        flex-direction: column;
+        margin-top: 80px;
+        gap: 65px;
+    }
+
+    .nav_list li {
+        opacity: 0;
+    }
+
+    .mobile_menu {
+        display: block;
+    }
+
+    .nav_list.active {
+        transform: translateX(0);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+    }
+    .img__header {
+        width: 340px;
+
+    }
+
+    .section_home_grid_columns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .home_page_grid_template_responsive {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 400px;
+
+    }
+    .foto_perfil_grid_left {
+        position: relative;
+        z-index: 2;
+    }
+
+    .nome_script_grid_rigth {
+        display: flex;
+        max-width: 400px;
+        position: absolute;
+        margin: 0 auto;
+        align-items: center;
+        opacity: 0.2;
+
+    }
+
+    .div_titulo_esc_animado {
+        display: flex;
+        position: absolute;
+        position: absolute;
+        align-items: center;
+        margin: 0 0 0 33em;
+    }
+
+    .section_sobre_flex {
+        height: 100vh;
+    }
+    .download_curriculo_buttom {
+        position: absolute;
+        left: 70%;
+        text-decoration: none;
+        font-size: 20px;
+        color: #ffffff;
+        transition: .7s;
+        background: #393939;
+        padding: 12px 12px;
+        border-radius: 10px;
+        border-width: 3px;
+        border-style:solid;
+        border-color: #3486A3;
+    }
+    .download_curriculo_buttom:hover {
+        background-color: #3486A3;
+        border-color: #ffffff;
+        color: #ffffff;
+        text-shadow: 0px 0px 1.5px #ffffff;
+    }
+    .div_sobre_grid_template_columns {
+        margin: 300px 0 0 0;
+    }
+    .section_exp_flex_template {
+        height: 100vh;
+    }
+    .exp_escolaridade_grid_template_2_columns {
+        margin: 300px 0 0 0;
+    }
+    .section_projetos_flex_container {
+        height: 140vh;
+    }
+} 
 @media (max-width:1100px) {
 
     body {
@@ -635,7 +762,7 @@ h1 {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 80vh;
+        height: 100vh;
     }
 
     .home_page_grid_template_responsive {
@@ -669,15 +796,13 @@ h1 {
     }
 
     .section_sobre_flex {
-        height: 70vh;
+        height: 100vh;
     }
     .download_curriculo_buttom {
-        align-items: center;
-        display: flex;
         position: absolute;
+        left: 70%;
         text-decoration: none;
-        margin: 0 0 0 68%;
-        font-size: 16px;
+        font-size: 20px;
         color: #ffffff;
         transition: .7s;
         background: #393939;
@@ -691,7 +816,7 @@ h1 {
         margin: 300px 0 0 0;
     }
     .section_exp_flex_template {
-        height: 80vh;
+        height: 100vh;
     }
     .exp_escolaridade_grid_template_2_columns {
         margin: 300px 0 0 0;
@@ -704,6 +829,9 @@ h1 {
 @media (max-width:800px) {
     body {
         overflow-x: hidden;
+    }
+    .section_home_grid_columns {
+        height: 80vh;
     }
     .download_curriculo_buttom {
         align-items: center;
@@ -1053,6 +1181,293 @@ h1 {
         display: flex;
         width: 100%;
         height: 30vh;
+    
+    }
+    
+    .div_1100_flex_contato {
+        display: flex;
+        max-width: 320px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    
+    .icons_contato_guthub, .icons_contato_instagram, .icons_contato_linckedin, .icons_contato_whatsapp {
+        width: 45px;
+        height: 45px;
+        transition: .2s;
+    
+    }
+
+    .icon_contatos_tag_a {
+        margin: 150px 20px 0 20px;
+    }
+
+    .rodape_section {
+        background-color: #393939;
+        box-shadow: 0px 0px 20px #000000;
+        display: flex;
+        width: 100%;
+        height: 20vh;
+        text-align: start;
+        justify-content: space-between;
+    }
+    
+    .img_footer {
+        width: 150px;
+        margin: 0 0 0 0;
+    }
+    
+    .text_footer_direitos {
+        margin: auto 0 auto 25px ;
+        font-size: 12px;
+        color: #e1e1e1;
+    }
+
+
+}
+@media (max-width:350px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .img__header {
+        width: 250px;
+    }
+
+    .mobile_menu div {
+        width: 24px;
+        height: 2px;
+        background: #ffffff;
+        margin: 6px;   
+    }
+
+    .section_home_grid_columns {
+        height: 120vh;
+        margin: 0 auto 0 auto;
+        justify-content: center;
+    }
+    .texto_animado_home {
+        width: 315px;
+        font-size: 28px;
+    }
+
+    .home_page_grid_template_responsive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 70px auto;
+
+    }
+
+    .foto_perfil_home_grid_template {
+        width: 100%;
+    }
+    .flex_botoes_home_contato {
+        width: 150px;
+    }
+
+    .foto_perfil_grid_left {
+        display: block;
+        position: relative;
+        width:100%;
+        scale: .8;
+    }
+
+    .nome_script_grid_rigth {
+        display: flex;
+        justify-content: center;
+        opacity: 0.2;
+    }
+
+    .home_botao_linkedin_left {
+        text-decoration: none;
+        font-size: 20px;
+        background-color: #393939;
+        border-radius: 10px;
+        padding: 15px 35px;
+        margin: 30px 0 0 0px;
+        color: #ffffff;
+        border-width: 3px;
+        border-style:solid;
+        border-color: #3486A3;
+        transition: .2s;
+    }
+
+    .home_botao_github_rigth {
+        text-decoration: none;
+        font-size: 20px;
+        background-color: #393939;
+        border-radius: 10px;
+        padding: 15px 45px;
+        margin: 30px 0 0 30px;
+        color: #ffffff;
+        border-width: 3px;
+        border-style:solid;
+        border-color: #3486A3;
+        transition: .2s;
+    }
+
+    .section_sobre_flex {
+        height: 100vh;
+    }
+
+    .download_curriculo_buttom {
+        position: absolute;
+        left: 20%;
+        text-decoration: none;
+        font-size: 8px;
+        color: #ffffff;
+        transition: .7s;
+        background: #393939;
+        padding: 12px 12px;
+        border-radius: 10px;
+        border-width: 3px;
+        border-style:solid;
+        border-color: #3486A3;
+        scale: .8;
+    }
+
+    .img_curriculo_download {
+        width: 15px;
+    }
+
+    .texto_animado_sobre {
+        font-size: 22px ;
+    }
+
+    .text_sobre_article_center {
+        color: #e1e1e1;
+        font-size: 10px;
+    }
+    .par_2_text {
+        margin: 1em 0 0 0;
+    }
+
+    .cartao_sobre_tempplate_2 {
+        width: 100%;
+        margin: 0 0 300px 0;
+    }
+
+    .section_exp_flex_template {
+        height: 160vh;
+        overflow-x: hidden;
+    }
+    .exp_escolaridade_grid_template_2_columns {
+        margin: 0 0 10% 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .html_img_inferior, .css_img_inferior, .js_img_inferior {
+        width: 100px;
+        z-index: 2;
+    }
+    .html_img_superior, .css_img_superior, .js_img_superior {
+        width: 100px;
+        position: absolute;
+        z-index: 90;
+    }
+
+    .img_react_template_absolute {
+        display: flex;
+        position: absolute;
+        align-items: center;
+    }
+    .react_img {
+        position: absolute;
+        width: 80px;
+        margin: 16em 0 0 6.8em;
+    }
+    
+    .text_react_absolute_template {
+        position: absolute;
+        width: 80px;
+        margin: 26em 0 0 9.2em;
+        z-index: 0;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 750;
+    }
+    .text_exp_animado {
+        position: absolute;
+        margin: 0 auto 2em auto;
+        transition: .7s;
+    }
+    .div_titulo_exp {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: start;
+        margin: 3em 0 0 8.5em;
+    }
+    .div_titulo_esc_animado {
+        display: flex;
+        position: absolute;
+        position: absolute;
+        align-items: center;
+        margin: 26em 0 0 7.8em;
+    }
+    
+    .text_div_grid_html, .text_div_grid_css, .text_div_grid_js {
+        position: absolute;
+        margin: 8em auto 0 auto;
+        z-index: 0;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 750;
+    }
+    
+    .div_escolaridade_span_2 {
+        display: flexbox;
+        grid-column: span 1;
+        justify-content: center;
+        align-items: center;
+        margin: 6em 0 0 1em;
+        
+    }
+    .img_logo_uniasselvi_svg_exp , .img_logo_alura_svg_exp {
+        position: absolute;
+        width: 80px;
+        padding-top: 1em;
+        
+    }
+    .uniasselvi_text_flex_column, .alura_text_flex_column {
+        font-size: 12px;
+        color: #000000;
+        margin: 0 0 2.5em 7em;
+        padding-top: 4em ;
+    }
+
+
+    .section_projetos_flex_container {
+        height: 220vh;
+        max-width: 312px;
+    }
+
+    .titulo_projetos_animated {
+        margin: 0 0 260% 0;
+    }
+    .cartao_projeto_img_hover_links {
+        scale: .9;
+    }
+
+    .div_projetos_grid_template {
+        display: grid;
+        width: 100%;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin: 80% 0 0 0;
+    }
+
+    #link_repositorio_projeto_1, #link_site_projeto_1 {
+        opacity: 1;
+    }
+
+    .section_contato_display_flex {
+        display: flex;
+        width: 100%;
+        height: 50vh;
     
     }
     
